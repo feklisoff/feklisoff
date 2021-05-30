@@ -23,13 +23,13 @@ const ProfileCard = () => {
                 </Grid>
                 <Grid container xs={12}>
                     <Grid item xs={4}>
-                        <a href='https://github.com/feklisoff' target="_blank"><img className='grow br-100 github' src={github} alt='github'/></a>
+                        <a href='https://github.com/feklisoff' rel="noopener noreferrer" target="_blank"><img className='grow br-100 github' src={github} alt='github'/></a>
                     </Grid>
                     <Grid item xs={4}>
-                        <a href='https://www.linkedin.com/in/afeklisov/' target="_blank"><img className='grow br-100 linkedin' src={linkedin} alt='linkedin'/></a>
+                        <a href='https://www.linkedin.com/in/afeklisov/' rel="noopener noreferrer" target="_blank"><img className='grow br-100 linkedin' src={linkedin} alt='linkedin'/></a>
                     </Grid>
                     <Grid item xs={4}>
-                        <a href='' target="_blank"><img className='grow br-100 crypto' src={crypto} alt='crypto'/></a>
+                        <a href='' rel="noopener noreferrer" target="_blank"><img className='grow br-100 crypto' src={crypto} alt='crypto'/></a>
                     </Grid>
                 </Grid>
             </Grid>

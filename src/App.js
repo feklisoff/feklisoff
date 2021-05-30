@@ -41,7 +41,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000')
+    fetch('https://lit-oasis-95099.herokuapp.com/')
     .then(response => response.json())
     .then(console.log)
   }
@@ -63,7 +63,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Grid container spacing={1}>
+        <Grid container spacing={0}>
           <Grid item xs={12} justify='center'>
             <Navigation onRouteChange={this.onRouteChange}/>
           </Grid>
