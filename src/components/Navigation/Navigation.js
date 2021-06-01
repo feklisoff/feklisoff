@@ -1,23 +1,27 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
 import './Navigation.css'
+import {Link, BrowserRouter as Router} from 'react-router-dom'
+import Grid from '@material-ui/core/Grid'
 
-const Navigation = ({onRouteChange, isSignedIn}) => {
+const Navigation = () => {
     return(
         <div>
-            <Logo onRouteChange={onRouteChange}/>
-
-            <div class="bannerTop">
-                <p onClick={() => onRouteChange('home')} className="fl w-75 siteName dim pointer ma0">FEKLISOFF</p>
-            </div>
-            
-            <div class="fl w-75">
-                <p onClick={() => onRouteChange('blog')} className="link dim siteLink  f5-ns dib mr3 pointer">Blog</p>
-                <p onClick={() => onRouteChange('finportfolio')} className="link dim siteLink  f5-ns dib mr3 pointer">Investments</p>
-                <p onClick={() => onRouteChange('booklist')} className="link dim siteLink  f5-ns dib mr3 pointer">Reading</p>
-                <p onClick={() => onRouteChange('apis')} className="link dim siteLink  f5-ns dib mr3 pointer">APIs</p>
-                <p onClick={() => onRouteChange('contact')} className="link dim siteLink  f5-ns dib mr3 pointer">Contact</p>
-            </div>   
+            <Grid container>
+                <Grid item xs={12}>
+                    <Link to='/'><Logo className='logo'/></Link>
+                    <div className="bannerTop">
+                        <Link to='/' className="link siteName dim pointer ma0">FEKLISOFF</Link>
+                    </div>
+                    <div className="">
+                        <Link to='/blog' className="link dim siteLink  f5-ns dib mr3 pointer">Blog</Link>
+                        <Link to='/invest' className="link dim siteLink  f5-ns dib mr3 pointer">Investments</Link>
+                        <Link to='/books' className="link dim siteLink  f5-ns dib mr3 pointer">Reading</Link>
+                        <Link to='/apis' className="link dim siteLink  f5-ns dib mr3 pointer">APIs</Link>
+                        <Link to='/contact' className="link dim siteLink  f5-ns dib mr3 pointer">Contact</Link>
+                    </div> 
+                </Grid>
+            </Grid>
         </div>
     )
     }

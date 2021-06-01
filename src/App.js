@@ -1,77 +1,24 @@
 import React, {Component} from 'react'
 import Navigation from './components/Navigation/Navigation'
-import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm'
-import VisitCounter from './components/VisitCounter/VisitCounter'
-import SignIn from './components/SignIn/SignIn'
-import Register from './components/Register/Register'
 import Blog from './components/Blog/Blog'
 import ProfileCard from './components/InfoCards/ProfileCard'
-import Grid from '@material-ui/core/Grid';
-import './App.css';
-import { Divider } from '@material-ui/core'
-import WelcomeCard from './components/InfoCards/WelcomeCard'
+import Grid from '@material-ui/core/Grid'
+import './App.css'
+import {BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom'
 
 class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      route: 'home',
-      isSignedIn: false,
-      user: {
-        id: '',
-        name: '',
-        email: '',
-        password: '',
-        entries: '0',
-        joined: ''
-      }
-    }
-  }
-
-  loadUser = (user) => {
-    this.setState({user: {
-      id: user.id,
-      name: user.name,
-      email: user.email,
-      password: user.password,
-      entries: user.entries,
-      joined: user.joined
-    }
-  })
-  }
-
-  componentDidMount() {
-    fetch('https://lit-oasis-95099.herokuapp.com/')
-    .then(response => response.json())
-    .then(console.log)
-  }
-
-  onRouteChange = (route) => {
-    this.setState({route: route})
-  }
-  displayState = (state) => {
-    // 6 mains states:
-    // - home, blog, investments, 
-    // - reading, projects, contact
-    /*
-      skip home (hard to design) for now
-      create blog, reading, contact
-      start working on home and investments
-    */
-  }
-
   render() {
     return (
       <div className='App'>
-        <Grid container spacing={0}>
-          <Grid item xs={12} justify='center'>
-            <Navigation onRouteChange={this.onRouteChange}/>
-          </Grid>
-          <Grid item xs={4}>
-            <ProfileCard />
-          </Grid>
-          <Grid item xs={8}>
-            <WelcomeCard />
+        <Grid container>
+          <Grid item xs={12}>
+            <Router>
+              <Navigation />
+              <Switch>
+                <Route exact path='/' component={withRouter(ProfileCard)}/>
+                <Route exact path='/blog' component={withRouter(Blog)}/>
+              </Switch>
+            </Router>
           </Grid>
         </Grid>
       </div>

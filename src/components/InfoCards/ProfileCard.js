@@ -21,15 +21,15 @@ const ProfileCard = () => {
                         <div className='profileCardText'>Welcome to my Home Page!</div>
                     </Grid>
                 </Grid>
-                <Grid container xs={12}>
+                <Grid container>
                     <Grid item xs={4}>
-                        <a href='https://github.com/feklisoff' rel="noopener noreferrer" target="_blank"><img className='grow br-100 github' src={github} alt='github'/></a>
+                        <a href='https://github.com/feklisoff' rel="noopener noreferrer" target="_blank"><img className='grow br-100 thumbnailLink' src={github} alt='github'/></a>
                     </Grid>
                     <Grid item xs={4}>
-                        <a href='https://www.linkedin.com/in/afeklisov/' rel="noopener noreferrer" target="_blank"><img className='grow br-100 linkedin' src={linkedin} alt='linkedin'/></a>
+                        <a href='https://www.linkedin.com/in/afeklisov/' rel="noopener noreferrer" target="_blank"><img className='grow br-100 thumbnailLink' src={linkedin} alt='linkedin'/></a>
                     </Grid>
                     <Grid item xs={4}>
-                        <a href='' rel="noopener noreferrer" target="_blank"><img className='grow br-100 crypto' src={crypto} alt='crypto'/></a>
+                        <a href='google.com' rel="noopener noreferrer" target="_blank"><img className='grow br-100 thumbnailLink' src={crypto} alt='crypto'/></a>
                     </Grid>
                 </Grid>
             </Grid>
