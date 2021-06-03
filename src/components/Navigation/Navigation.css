@@ -10,6 +10,9 @@
     font-weight: bold;
 }
 
+.grow { transition: all .2s; }
+.grow:hover { transform: scale(1.2); }
+
 .siteName {
     -webkit-text-stroke: 0px #000000;
     font-family: Rokkitt;
@@ -20,7 +23,7 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #160f29;
+    color: #2F3061;
   }
 
 .linksUnder {
@@ -35,14 +38,14 @@
 .siteLink {
     margin: 11px 486px 10px 24px;
     font-family: Rokkitt;
-    font-size: 20px;
-    font-weight: normal;
+    font-size: 18px;
+    font-weight:normal;
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #000000;
+    color: #343434;
   }
 
 .bannerTop {
@@ -50,7 +53,7 @@
     margin: 40px 0 11px;
     padding: -30px 250px 8px 485px;
     border: solid 1px #ffffff;
-    background-color: #246a73;
+    background-color: #6CA6C1;
   }
 
 .link {

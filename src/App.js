@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import Navigation from './components/Navigation/Navigation'
 import Blog from './components/Blog/Blog'
 import ProfileCard from './components/InfoCards/ProfileCard'
@@ -6,8 +6,8 @@ import Grid from '@material-ui/core/Grid'
 import './App.css'
 import {BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom'
 
-class App extends Component {
-  render() {
+
+const App = () => {
     return (
       <div className='App'>
         <Grid container>
@@ -23,7 +23,6 @@ class App extends Component {
         </Grid>
       </div>
     )
-  }
 }
 
 export default App;
