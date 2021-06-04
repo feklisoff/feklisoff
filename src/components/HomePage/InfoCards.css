@@ -14,9 +14,15 @@
   }
 
 .homeText {
-  margin: 0px 0px 0px 0px;
-  padding: 150px 360px 20px 0px;
-  text-align: center;
+  margin: 0px 100px 0px 0px;
+  padding: 3em 1em 0px 0px;
+  text-align: left;
+  font-size: 30px;
+  letter-spacing: 0.02em;
+  line-height: 1.4em;
+  color: #343434;
+  text-shadow:#ffe66d 0px 1px;
+
 }
 
 .profileCardText {
@@ -29,7 +35,7 @@
     line-height: normal;
     letter-spacing: normal;
     text-align: center;
-    color: #000000;
+    color: #343434;
   }
 .profilePic {
     width: 212px;

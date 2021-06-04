@@ -3,15 +3,18 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
     blogs: [
         {date: '06/02/2021', title: 'first title',
-         body: 'first body', author: 'me', tags: []},
+         body: 'first body', author: 'me', tags: [], 
+         imgUrl: 'https://www.sciencekids.co.nz/images/pictures/math/number1.jpg'},
         {date: '06/02/2021', title: 'second title',
-         body: 'second body', author: 'me', tags: ['wild']},
+         body: 'second body', author: 'me', tags: ['wild'], 
+         imgUrl: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/NYCS-bull-trans-2.svg/1200px-NYCS-bull-trans-2.svg.png'},
         {date: '06/02/2021', title: 'third title',
-         body: 'third body', author: 'me', tags: ['crazy','fun']}
+         body: 'third body', author: 'me', tags: ['crazy','fun'], 
+         imgUrl: 'https://cdn.pixabay.com/photo/2015/04/04/19/13/three-706895_640.jpg'}
     ]
 }
 export const blogSlice = createSlice({
-    name: 'blog posts',
+    name: 'blog_posts',
     initialState: initialState.blogs,
     reducers: {
         addBlog: (state, action) => {

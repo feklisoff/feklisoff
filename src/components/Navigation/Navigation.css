@@ -26,17 +26,8 @@
     color: #2F3061;
   }
 
-.linksUnder {
-    width: 469px;
-    height: 0px;
-    left: -401px;
-    top: 44px;
-
-    background: #C4C4C4;
-    border: 1px solid rgba(141, 102, 2, 0.8);
-  }
 .siteLink {
-    margin: 11px 486px 10px 24px;
+    margin: 0px 0px 0px 20px;
     font-family: Rokkitt;
     font-size: 18px;
     font-weight:normal;
@@ -50,9 +41,8 @@
 
 .bannerTop {
     height: 83px;
-    margin: 40px 0 11px;
-    padding: -30px 250px 8px 485px;
-    border: solid 1px #ffffff;
+    margin: 2.3em 0 0.6em;
+    border: solid 1px #343434;
     background-color: #6CA6C1;
   }
 
