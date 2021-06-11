@@ -3,7 +3,7 @@ import Navigation from './components/Navigation/Navigation'
 import Blog from './components/Blog/Blog'
 import HomePage from './components/HomePage/HomePage'
 import ContactForm from './components/Contact/Contact'
-import books from './components/Books/CardList'
+import CardList from './components/Books/CardList'
 import Grid from '@material-ui/core/Grid'
 import './App.css'
 import {BrowserRouter as Router, Switch, Route, withRouter} from 'react-router-dom'
@@ -20,7 +20,7 @@ const App = () => {
                 <Route exact path='/' component={withRouter(HomePage)}/>
                 <Route exact path='/blog' component={withRouter(Blog)}/>
                 <Route exact path='/contact' component={withRouter(ContactForm)}/>
-                <Route exact path='/books' component={withRouter(books)}/>
+                <Route exact path='/books' component={withRouter(CardList)}/>
               </Switch>
             </Router>
           </Grid>

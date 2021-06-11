@@ -1,3 +1,9 @@
 .blogButton {
     padding: 0px 0px 0px 0px;
 }
+
+.blogImg {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+}

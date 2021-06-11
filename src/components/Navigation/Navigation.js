@@ -27,7 +27,7 @@ const Navigation = () => {
                         <Link to='/blog' className="link dim grow siteLink  dib mr3 pointer">Blog</Link>
                         <Link to='/invest' className="link dim grow siteLink  dib mr3 pointer">Investments</Link>
                         <Link to='/books' className="link dim grow siteLink dib mr3 pointer">Reading</Link>
-                        <Link to='/apis' className="link dim grow siteLink dib mr3 pointer">APIs</Link>
+                        <Link to='/apis' className="link dim grow siteLink dib mr3 pointer">Projects</Link>
                         <Link to='/contact' className="link dim grow siteLink dib mr3 pointer">Contact</Link>
                         {isSignedIn ? (<GoogleLogout clientId='1008671101441-jai61r4qqedlgq0sfq5hmnj744c3sjm0.apps.googleusercontent.com'
                          render={(renderProps) => (
